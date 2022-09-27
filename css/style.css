@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;900&display=swap');
+body{
+  font-family: "Roboto", sans-serif ;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  background-color: #e12120;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+.nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin: 0 auto;
+width: 100%; 
+max-width: 1440px;
+padding: 10px;
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 10px;
+}
+.logo img{
+  height: 60px;
+  width: 60px;
+}
+.nav ul{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 10px;
+list-style-type: none;
+color: #fff;
+}
+
+
+.hero{
+  background-image: url(../imagenes/background.jpg);
+  height: 100vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+.hero__content{
+padding: 300px 10px;
+text-align: center;
+}
+.hero__title{
+  font-style: italic;
+  font-size: 8rem;
+  text-align: center;
+  line-height: 1.6;
+  color: #fff;
+  text-shadow: 2px 2px 10px #e12120; 
+}
+
+
+.contenedor{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nuestrasmarcas{
+  margin: 30px 0px;
+}
+.nuestrasmarcas__title{
+font-size: 4rem;
+text-align: center;
+}
+.nuestrasmarca__galeria{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 40px 0px;
+  gap: 10px;
+}
+.nuestrasmarca__galeria img{
+  height: 300px;
+  width: 100%;
+}
+.nosotros{
+  margin: 30px ;
+}
+.ubicanos{
+  margin: 30px;
+}
+
+
+#imagen-mapa{
+  background-image: url(../imagenes/StreetMap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.footer{
+  width: 100%;
+  background-color: #911515;
+}
+.footer__contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%; 
+  max-width: 1440px;
+  padding: 60px 0px;
+}
