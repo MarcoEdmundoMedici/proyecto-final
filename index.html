@@ -5,91 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./imagenes/motito.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>JapónMotos</title>
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <a class="logo" href="./index.html">
-          <img src="./imagenes/motito.png" alt="Logo" />
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container nav__content">
+        <a class="logo" href="./index.html"
+          ><img src="./imagenes/motito.png" alt="logo" />
           <h3>JapónMotos</h3>
         </a>
-        <ul>
-          <li>
-            <a href="./nosotros.html">Nosotros</a>
-          </li>
-          <li>
-            <a href="./marcas.html">Marcas</a>
-          </li>
-          <li>
-            <a href="./posventa.html">Posventa</a>
-          </li>
-          <li>
-            <a href="./contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="marcas.html">marcas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="posventa.html">posventa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">contactos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="hero">
       <div class="hero__content">
         <h1 class="hero__title">JapónMotos</h1>
       </div>
-    </div>
-    <main class="contenedor">
-      <section class="nuestrasmarcas">
-        <h2 class="nuestrasmarcas__title">Nuestras Marcas</h2>
-        <div class="nuestrasmarca__galeria">
-          <img src="./imagenes/honda.png" alt="honda" />
-          <img src="./imagenes/kawasaki.png" alt="kawasaki" />
-          <img src="./imagenes/yamaha.png" alt="yamaha" />
-          <img src="./imagenes/suzuki.png" alt="suzuki" />
-        </div>
-      </section>
-      <section>
-        <h2>Nosotros</h2>
-        <p class="nosotros">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet unde
-          voluptate fuga sequi sed eum dicta officia esse inventore commodi hic
-          aut veritatis similique nam, eius, perferendis illum tempore omnis. In
-          et aliquid iure perspiciatis vitae temporibus consequuntur, placeat
-          neque id. Optio suscipit voluptas consequatur pariatur minus.
-          Excepturi reprehenderit itaque officia, nemo ab vitae consequuntur
-          eius sequi, cupiditate omnis expedita? Velit officia alias dolorum
-          quidem nulla at ipsa iste incidunt ipsam delectus, nisi, provident
-          laudantium optio neque quia. Eaque esse rerum, quaerat natus rem
-          eveniet recusandae doloremque quidem veniam omnis. Eos, quidem
-          suscipit! Doloribus eaque ad quisquam rerum tempora. Recusandae fugiat
-          earum ut minima, nemo molestiae nihil quisquam ipsam, harum animi
-          ullam, odit architecto placeat hic ea beatae aliquam voluptatibus. In,
-          debitis culpa laborum blanditiis totam quia quae nemo iure vero.
-          Asperiores dolore obcaecati voluptas corporis sunt iusto officiis,
-          eius error placeat debitis possimus dolor quaerat nemo quae non autem.
-          Sed, neque vel magni cupiditate earum architecto praesentium aperiam.
-          Error repudiandae perspiciatis quibusdam laborum ratione veniam
-          assumenda mollitia? Impedit ex alias hic ratione corrupti, sint iste
-          tenetur magni assumenda? Magni. Possimus qui sequi totam nihil
-          reprehenderit? Distinctio quibusdam alias repellat error voluptas!
-          Nulla soluta dolore alias voluptates quos, id expedita nihil laborum,
-          dolorum vero temporibus odio, earum magni voluptatem ducimus.
-          Assumenda quibusdam modi blanditiis quis, obcaecati corrupti
-          reprehenderit ut expedita doloribus dolore est reiciendis impedit
-          autem facilis necessitatibus. Iste, eveniet quas doloremque aperiam
-          itaque saepe delectus! Officia incidunt similique rerum. Adipisci
-          praesentium ratione dolore ad assumenda eligendi laudantium
-          exercitationem, itaque, alias ducimus provident atque magnam? Nam
-          mollitia omnis autem error deleniti libero dolor voluptas cum dolore
-          aut, exercitationem rerum non. Architecto ex, dolor eveniet facere hic
-          suscipit blanditiis sit enim ipsa qui repellat sapiente odit aliquam
-          vel nam dolorem a mollitia! Autem, iste ipsa impedit itaque libero
-          eligendi nobis incidunt.
-        </p>
-      </section>
-      <section>
+
+    <section class="seccion">
+      <article class="seccion__content">
+        <h2>
+          NO SOLO VENDEMOS MOTOS,
+    CUMPLIMOS SUEÑOS.
+        </h2>
+        <P>Miramos al futuro, y vendemos máquinas
+          que están siempre un paso adelante.</P>
+        <a href="./nosotros.html" class="btn btn-primary">Nosotros</a>
+      </article>
+    </section>
+
+    <section class="seccion" id="r1m">
+      <article class="seccion__content">
+        <h2>
+          Nuestras Marcas
+        </h2>
+        <a href="./marcas.html" class="btn btn-primary">Marcas</a>
+      </article>
+    </section>
+
+      <section class="ubicanos">
         <h2>Ubicanos</h2>
-        <div class="ubicanos" id="imagen-mapa"></div>
+        <div class="ubicanos__map" id="imagen-mapa"></div>
       </section>
-    </main>
+
+        <div class="container">
+          <h2>Contacto</h2>
+          <form class="my-5">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">Nunca compartiremos tus datos con alguien más</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+
     <footer class="footer">
       <div class="footer__contenedor">
         <a class="logo" href="./index.html">
@@ -124,5 +142,10 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

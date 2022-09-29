@@ -1,52 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;900&display=swap');
-body{
-  font-family: "Roboto", sans-serif ;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+:root {
+  --font-Anton: "Anton", sans-serif;
+  --font-Roboto: "Roboto", sans-serif;
+  --color-primario: #e12120;
+  --color-white: #fff
 }
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-a{
+body {
+  font-family: var(--font-Roboto);
+}
+
+a {
   text-decoration: none;
   color: inherit;
 }
-header {
-  background-color: #e12120;
+
+/* header */
+.navbar {
+  background-color: var(--color-primario);
   position: fixed;
-  z-index: 10;
   width: 100%;
 }
-.nav{
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 0 auto;
-width: 100%; 
-max-width: 1440px;
-padding: 10px;
-}
-.logo{
+
+.logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  gap: 10px;
 }
-.logo img{
+
+.logo img {
   height: 60px;
   width: 60px;
 }
-.nav ul{
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 10px;
-list-style-type: none;
-color: #fff;
+
+.logo h3{
+  margin: 0;
+  color: var(--color-white);
 }
 
+.navbar-nav{
+  margin-left: 150px;
+}
 
-.hero{
+.nav-link{
+  color: var(--color-white);
+  padding: 15px;
+  margin: 0 10px;
+  transition: all .2s ease-in-out;
+}
+
+.nav-link:hover{
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+}
+/* header */
+
+/* hero */
+.hero {
   background-image: url(../imagenes/background.jpg);
   height: 100vh;
   width: 100%;
@@ -55,52 +72,100 @@ color: #fff;
   background-size: cover;
 }
 
-
-.hero__content{
-padding: 300px 10px;
-text-align: center;
+.hero__content {
+  padding: 300px 10px;
+  text-align: center;
 }
-.hero__title{
-  font-style: italic;
+.hero__title {
   font-size: 8rem;
   text-align: center;
   line-height: 1.6;
+  font-family: var(--font-Anton);
   color: #fff;
-  text-shadow: 2px 2px 10px #e12120; 
+  text-shadow: 2px 2px 10px #e12120;
 }
+/* hero */
 
+/* botones */
+.btn-primary{
+  background-color: var(--color-primario);
+  border: none;
+  transition: background-color .2s ease-in-out;
+}
+/* botones */
 
-.contenedor{
-  max-width: 1440px;
+/* seccion */
+
+.seccion{
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seccion__content{
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
-.nuestrasmarcas{
+
+#r1m{
+  background-image: url(../imagenes/YamahaR1M.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#r1m h2{
+  font-size: 80px;
+  color: var(--color-white);
+  font-family: var(--font-Anton);
+  text-shadow: 0 5px 10px rgba(0, 0, 0, .9);
+}
+
+.nuestrasmarcas {
   margin: 30px 0px;
 }
-.nuestrasmarcas__title{
-font-size: 4rem;
-text-align: center;
+.nuestrasmarcas__title {
+  font-size: 4rem;
+  text-align: center;
 }
-.nuestrasmarca__galeria{
+.nuestrasmarca__galeria {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 100%;
   padding: 40px 0px;
   gap: 10px;
 }
-.nuestrasmarca__galeria img{
+.nuestrasmarca__galeria img {
   height: 300px;
   width: 100%;
 }
-.nosotros{
-  margin: 30px ;
-}
-.ubicanos{
+.nosotros {
   margin: 30px;
 }
 
+.ubicanos{
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
 
-#imagen-mapa{
+.ubicanos__map {
+  margin: 30px;
+}
+
+#imagen-mapa {
   background-image: url(../imagenes/StreetMap.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -108,16 +173,36 @@ text-align: center;
   width: 100%;
 }
 
-.footer{
+.nosotros{
+  display: block;
+  max-width: 50%;
+}
+
+.footer {
   width: 100%;
   background-color: #911515;
 }
-.footer__contenedor{
+.footer__contenedor {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 100%; 
+  width: 100%;
   max-width: 1440px;
   padding: 60px 0px;
+}
+
+.nuestrasmarcas {
+  margin: 30px 0px;
+}
+.nuestrasmarcas__title {
+  font-size: 4rem;
+  text-align: center;
+}
+.nuestrasmarca__galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  padding: 40px 0px;
+  gap: 10px;
 }
