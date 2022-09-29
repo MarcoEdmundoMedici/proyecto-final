@@ -219,20 +219,6 @@ a {
   height: 250px;
   width: 250px;
 }
-.item__top--circle {
-  height: 70px;
-  width: 70px;
-  border-radius: 50%;
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
-  font-weight: 800;
-  font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  transition: all 0.2s ease-in-out;
-}
 .item__top--text {
   font-size: 1.8rem;
   text-transform: uppercase;
