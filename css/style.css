@@ -71,6 +71,7 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  padding: 100px 0px;
 }
 
 .hero__content {
@@ -188,6 +189,11 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+}
+.seccion__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .section__title {
   color: var(--color-black-1);
