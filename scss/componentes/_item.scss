@@ -1,0 +1,28 @@
+.item {
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 1rem;
+    min-height: 150px;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    &__top {
+        width: 100%;
+        position: relative;
+      }
+      &__top img{
+        @include size(250px, 250px);
+      }
+      &__top--text {
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        margin-top: 1rem;
+      }
+      &__text {
+        @include size(100%, 100%);
+        text-align: center;
+      }
+      & p span {
+        font-style: italic;
+      }
+  }

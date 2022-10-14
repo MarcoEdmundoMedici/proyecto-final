@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  box-sizing: border-box; }
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.navbar {
+  background-color: #e12120;
+  position: fixed;
+  width: 100%;
+  z-index: 10; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .logo img {
+    height: 60px;
+    width: 60px; }
+  .logo h3 {
+    margin: 0;
+    color: #fff; }
+
+.navbar-nav {
+  margin-left: 150px; }
+
+.nav-link {
+  color: #fff;
+  padding: 15px;
+  margin: 0 10px;
+  transition: all 0.2s ease-in-out; }
+  .nav-link:hover {
+    background-color: #fff;
+    color: black !important;
+    border-radius: 15px; }
+
+.hero {
+  padding: 100px 0px;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../imagenes/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+  .hero__content {
+    padding: 300px 10px;
+    text-align: center; }
+  .hero__title {
+    font-size: 8rem;
+    text-align: center;
+    line-height: 1.6;
+    font-family: "Anton", sans-serif;
+    color: #fff;
+    text-shadow: 2px 2px 10px #e12120; }
+
+#r1m {
+  background-image: url(../imagenes/YamahaR1M.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  #r1m h2 {
+    font-size: 80px;
+    color: var(--color-white);
+    font-family: var(--font-Anton);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.9); }
+
+.btn-primary {
+  background-color: #e12120;
+  border: none;
+  transition: background-color .2s ease-in-out; }
+
+.banner {
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .banner__content {
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto; }
+
+.nuestrasmarcas {
+  margin: 30px 0px; }
+  .nuestrasmarcas__title {
+    font-size: 4rem;
+    text-align: center; }
+  .nuestrasmarcas__galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding: 40px 0px;
+    gap: 10px; }
+  .nuestrasmarcas__galeria img {
+    height: 300px;
+    width: 100%; }
+
+.nuestrasmarcas {
+  margin: 30px 0px; }
+  .nuestrasmarcas__title {
+    font-size: 4rem;
+    text-align: center; }
+  .nuestrasmarcas__galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    padding: 40px 0px;
+    gap: 10px; }
+  .nuestrasmarcas__galeria img {
+    height: 300px;
+    width: 100%; }
+
+.section {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; }
+  .section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .section__title {
+    color: var(--color-black-1);
+    margin: 2rem 0 1rem 0;
+    font: normal 600 3rem var(--font-2); }
+  .section__subtitle {
+    text-align: center; }
+
+.section__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 3rem 0 1rem 0; }
+
+.item {
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 1rem;
+  min-height: 150px;
+  width: 100%;
+  transition: all 0.2s ease-in-out; }
+  .item__top {
+    width: 100%;
+    position: relative; }
+  .item__top img {
+    height: 250px;
+    width: 250px; }
+  .item__top--text {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem; }
+  .item__text {
+    height: 100%;
+    width: 100%;
+    text-align: center; }
+  .item p span {
+    font-style: italic; }
+
+.footer {
+  width: 100%;
+  background-color: #911515; }
+  .footer__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    padding: 60px 0px; }

@@ -1,0 +1,32 @@
+.hero {
+  padding: 100px 0px;
+  @include size(100vh, 100%);
+  @include background-image("../imagenes/background.jpg");
+  &__content {
+    padding: 300px 10px;
+    text-align: center;
+  }
+  &__title {
+    font-size: 8rem;
+    text-align: center;
+    line-height: 1.6;
+    font-family: $font-Anton;
+    color: $color-white;
+    text-shadow: 2px 2px 10px $color-primario;
+  }
+}
+
+#r1m{
+  background-image: url(../imagenes/YamahaR1M.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  & h2{
+    font-size: 80px;
+    color: var(--color-white);
+    font-family: var(--font-Anton);
+    text-shadow: 0 5px 10px rgba(0, 0, 0, .9);
+  }
+}
+
+

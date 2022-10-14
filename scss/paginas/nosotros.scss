@@ -1,0 +1,26 @@
+.nosotros {
+    margin: 30px;
+    display: block;
+    max-width: 50%;
+  }
+  
+  .ubicanos{
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    &__map {
+        margin: 30px;
+      }
+  }
+
+  #imagen-mapa {
+    background-image: url(../imagenes/StreetMap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include size(400px, 100%);
+  }
